@@ -408,6 +408,7 @@ b {
     top: 1.5vw;
     font-size: calc(var(--font-size));
     color: var(--ruby-color);
+    display: none;
 }
 
 .contanttext h2 {
@@ -486,16 +487,22 @@ b {
 
 @media (max-width:950px) {
     .maincontaner {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .contanttext {
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
+        margin-bottom: 60px;
         width: 40%;
         border-bottom: 1px solid var(--ruby-color);
 
+    }
+
+    .contanttext h6 {
+        top: 0vw;
+        font-weight: 700;
+        font-size: 20px;
+        color: var(--ruby-color);
+        text-align: center;
     }
 
     .contanttext h2 {
@@ -522,9 +529,7 @@ b {
 
     }
 
-    .contanttext h6 {
-        right: 0;
-    }
+
 
 
 }
