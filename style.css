@@ -378,6 +378,9 @@ nav {
 
 }
 
+.moop-sec-home {
+    display: none;
+}
 
 .maincontaner {
     width: 80%;
@@ -408,7 +411,7 @@ b {
     top: 1.5vw;
     font-size: calc(var(--font-size));
     color: var(--ruby-color);
-    display: none;
+
 }
 
 .contanttext h2 {
@@ -474,7 +477,6 @@ b {
     size: 20vw;
     height: 22vw;
     z-index: 100;
-
 }
 
 .contanttext ::before {
@@ -620,18 +622,48 @@ b {
     }
 }
 
-@media (max-width:750px) {
-    .contanttext h6 {
-        right: -1.3vw;
-    }
-}
+@media (max-width:750px) {}
 
 @media (max-width:670px) {
-
-
-    .contanttext h6 {
-        right: -1.3vw;
+    .maincontaner {
+        display: none;
     }
+
+    .moop-sec-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .moop-sec-home img {
+        height: 100px;
+        display: none;
+    }
+    .console-container {
+        font-size:3em;
+        font-weight: 700;
+        text-align:center;
+        
+        display:block;
+        color:white;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        margin:auto;
+      }
+      .console-underscore {
+         display:inline-block;
+        position:relative;
+        top:-0.14em;
+        left:10px;
+        
+    }
+
+   
+
+    
 }
 
 
