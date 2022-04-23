@@ -204,7 +204,11 @@ nav {
 }
 
 
-.linkspar:hover {
+.linkspar:hover
+ {
+    color: var(--text-color);
+}
+.linkspar:focus{
     color: var(--text-color);
 }
 
@@ -1226,9 +1230,6 @@ b {
     .prr {
         display: block;
     }
-
-    svg {}
-
 }
 
 circle {
@@ -1241,3 +1242,199 @@ circle {
     stroke-dasharray: 150;
     stroke-dashoffset: 300;
 }
+
+/* ------------------------------------------------------------------------- */
+/* projects-sec */
+.projects-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    text-decoration: none;
+    padding: 0;
+}
+.projects-sec h2{
+    font-size: 80px;
+    color: var(--tertiary-color);
+    letter-spacing: 0.5vw;
+}
+.projects-sec .category-par{
+    margin: 40px 0;
+    padding: 10px 60px;
+    /* background: var(--main-color); */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+.projects-sec .category-par ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.projects-sec .category-par ul li {
+    margin: 0px 50px;
+    color: var(--tertiary-color);
+    font-weight: 500;
+    font-size: 20px;
+}
+.projects-sec .category-par ul li i {
+    font-size: 20px;
+    color: var(--ruby-color-text);
+    margin: 0 5px;
+}
+.projects-sec .category-par ul li:hover{
+    color: var(--text-color);
+    scale: 1.5;
+}
+.projects-sec .category-par ul li:hover i{
+    color: var(--text-color);
+}
+.projects-sec .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.projects-sec .projects h3{
+    font-size: 40px;
+    color: var(--tertiary-color);
+    letter-spacing: 0.2vw;
+}
+.proj-contaner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+.projects-sec .projects .card-proj{
+    
+    color: var(--main-color);
+    background-image: url(Imgs/posters/2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 30ch;
+    max-height: 20ch;
+    min-height: 20ch;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 10rem  0 0;
+    display: flex;
+    text-align: left;
+    transition: 500ms ease;
+    margin: 40px 40px;
+    
+}.proj-contaner .card-proj:nth-child(1)
+{
+    background-image: url(Imgs/posters/1.jpg);
+}
+.proj-contaner .card-proj:nth-child(2)
+{
+    background-image: url(Imgs/posters/2.jpg);
+}
+.proj-contaner .card-proj:nth-child(3)
+{
+    background-image: url(Imgs/posters/3.jpg);
+}
+.proj-contaner .card-proj:nth-child(4)
+{
+    background-image: url(Imgs/posters/4.jpg);
+}
+.proj-contaner .card-proj:nth-child(5)
+{
+    background-image: url(Imgs/posters/5.jpg);
+}
+.proj-contaner .card-proj:nth-child(6)
+{
+    background-image: url(Imgs/posters/6.jpg);
+}
+.proj-contaner .card-proj:nth-child(7)
+{
+    background-image: url(Imgs/posters/7.jpg);
+}
+.proj-contaner .card-proj:nth-child(8)
+{
+    background-image: url(Imgs/posters/8.jpg);
+}
+.proj-contaner .card-proj:nth-child(9)
+{
+    background-image: url(Imgs/posters/9.jpg);
+}
+.proj-contaner .card-proj:nth-child(10)
+{
+    background-image: url(Imgs/posters/10.jpg);
+}
+.proj-contaner .card-proj:nth-child(11)
+{
+    background-image: url(Imgs/posters/11.jpg);
+}
+
+
+.projects-sec .projects .card-proj .info{
+    --padding: 1.5rem;
+    padding: var(--padding) ;
+    background-image: linear-gradient(rgb(255 255 255 / 0%),rgb(0 0 0 / 56%),rgb(0 0 0 / 66%),rgb(0 0 0 / 71%) ,rgb(0, 0, 0));
+    transform: translateY(70%);
+    transition: 1s;
+    
+}
+.projects-sec .projects .card-proj .info h3{
+    color: var(--text-color);
+    font-size: 20px;
+    position: relative;
+    width: max-content;
+    letter-spacing: 0;
+    text-align: center;
+    
+}
+.projects-sec .projects .card-proj .info p{
+   padding: 20px 0;
+    color: var(--text-color);
+}
+
+.projects-sec .projects .card-proj .info h3::after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    left: calc(var(--padding)* -1);
+    bottom: 0;
+    width:  calc(100% + var(--padding)) ;
+    background: var(--ruby-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 500ms;
+}
+
+.projects-sec .projects .card-proj:hover .info h3::after{
+    transform: scalex(1);
+}
+.projects-sec .projects .card-proj:hover .info{
+    transform: translateY(0%);
+    transition-delay: 500ms;
+
+}
+.projects-sec .projects .card-proj .info a{
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--main-color);
+    background-color: var(--ruby-color);
+    padding: 0.3em 1em;
+    border-radius: 10px;
+
+}
+.projects-sec .projects .card-proj .info a:hover{
+    background-color: var(--text-color);
+}
+
+
+
+
+
+
+
+
