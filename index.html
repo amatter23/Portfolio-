@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matter</title>
     <script src="https://kit.fontawesome.com/e22865cab0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-ad.scss">
+    <link rel="stylesheet" href="Style/main-style.css">
+    <link rel="stylesheet" href="Style/projects-sec.css">
+
 
 </head>
 
@@ -49,28 +50,11 @@
 
 
     </header>
-    <!-- <section class="sidepar-sec">
-        <div class="contener">
-            <div class="affter-row"></div>
-            <div class="sicons">
-                <a href="https://www.facebook.com/profile.php?id=100002346141245"><i
-                        class="fa-brands fa-facebook-square"></i></a>
-            </div>
-            <div class="sicons">
-                <a href="https://www.behance.net/matter36"><i class="fa-brands fa-behance-square"></i></i></a>
-            </div>
-            <div class="sicons">
-                <a href="https://twitter.com/matter1907"><i class="fa-brands fa-twitter-square"></i></a>
-            </div>
-            <div class="sicons">
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-            <div class="before-row"></div>
-        </div>
-    </section> -->
+
     <!-- ------------------------------------------------------------------- -->
     <!-- home-sec -->
     <section class="main-sec-home" id="Home">
+        <div class="scoure"></div>
 
         <div class="maincontaner">
             <div class="contanttext">
@@ -101,7 +85,7 @@
     <!-- about-sec -->
     <section class="color">
         <section class="about-sec" id="about">
-            <div class="contener-text">
+            <div class="contener-text viss">
                 <h3>Hello, <span>I'm</span> </h3>
                 <h2>Ahmed Matter <span>.</span> </h2>
                 <h4>Grafik Designer And Web Development</h3>
@@ -119,7 +103,7 @@
                         <a href=""><i class="fa-brands fa-linkedin"></i></a>
                     </div>
             </div>
-            <div class="img-contener">
+            <div class="img-contener viss">
                 <div class="img-hireme">
                     <div class="content">
                         <img src="Imgs/my-photo.svg" alt="">
@@ -142,7 +126,7 @@
             </div>
 
             <div class="grop-ser">
-                <div class="card">
+                <div class="card viss">
                     <div class="cicon">
                         <i class="fa-solid fa-clipboard-user"></i>
                     </div>
@@ -155,7 +139,7 @@
 
 
                 </div>
-                <div class="card">
+                <div class="card viss">
                     <div class="cicon">
                         <i class="fa-solid fa-road"></i>
                     </div>
@@ -165,7 +149,7 @@
                         to cutting your own bangs, you might be finally</b>
                     <a href="">Read More</a>
                 </div>
-                <div class="card">
+                <div class="card viss">
                     <div class="cicon">
                         <i class="fa-solid fa-broom-ball"></i>
                     </div>
@@ -278,125 +262,173 @@
         </div>
 
     </section>
-
-
     <!-- !-- ------------------------------------------------------------------- --> -->
     <!-- projects-sec -->
     <section class="color">
-        <section class="projects-sec">
+        <section class="projects-sec ">
             <h2>Projects</h2>
             <div class="category-par">
                 <ul>
-                    <li><i class="fa-solid fa-clipboard-user"></i> Posters</li>
-                    <li><i class="fa-solid fa-broom-ball"></i> Degital Art</li>
-                    <li><i class="fa-solid fa-road"></i> Motion Graphics</li>
+                    <li> <button onclick="seclectcontenerproj(this.id)" id="Poster-button"><i
+                                class="fa-solid fa-clipboard-user"></i> Posters
+                        </button>
+                    </li>
+
+                    <li><button onclick="seclectcontenerproj(this.id)" id="Degital-Art-button"><i
+                                class="fa-solid fa-broom-ball"></i> Degital Art
+                        </button>
+                    </li>
+                    <li><button onclick="seclectcontenerproj(this.id)" id="Motion-Graphics-button"><i
+                                class="fa-solid fa-road"></i> Motion Graphics
+                        </button>
+                    </li>
                 </ul>
             </div>
             <div class="projects">
-                <h3>Posters</h3>
-                <div class="proj-contaner">
-                    <div class="card-proj">
-                        <div class="info">
 
-                            <h3 class="Card-title">Some Thing </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur </p>
-                            <a href="#" class="button">More Ditels</a>
+                <div class="proj-contaner-posters viss" id="posters" data-viseple-poster="true">
+                    <h3>Posters</h3>
+                    <div class="card-conterner">
+                        <div class="card-proj">
+                            <div class="info">
 
+                                <h3 class="Card-title">Some Thing </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur </p>
+                                <a href="#" class="button">More Ditels</a>
+
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-proj">
-                        <div class="info">
+                        <div class="card-proj">
+                            <div class="info">
 
-                            <h3 class="Card-title">Some Thing </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur </p>
-                            <a href="#" class="button">More Ditels</a>
+                                <h3 class="Card-title">Some Thing </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur </p>
+                                <a href="#" class="button">More Ditels</a>
 
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-proj">
-                        <div class="info">
-
-                            <h3 class="Card-title">Some Thing </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur </p>
-                            <a href="#" class="button">More Ditels</a>
-
+                        <div class="card-proj">
+                            <div class="info">
+                                <h3 class="Card-title">Some Thing </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur </p>
+                                <a href="#" class="button">More Ditels</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-proj">
-                        <div class="info">
+                        <div class="card-proj">
+                            <div class="info">
 
-                            <h3 class="Card-title">Some Thing </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur </p>
-                            <a href="#" class="button">More Ditels</a>
+                                <h3 class="Card-title">Some Thing </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur </p>
+                                <a href="#" class="button">More Ditels</a>
 
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-proj">
-                        <div class="info">
+                        <div class="card-proj">
+                            <div class="info">
 
-                            <h3 class="Card-title">Some Thing </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur </p>
-                            <a href="#" class="button">More Ditels</a>
+                                <h3 class="Card-title">Some Thing </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur </p>
+                                <a href="#" class="button">More Ditels</a>
 
-                        </div>
-                    </div>
-                    <div class="card-proj">
-                        <div class="info">
-
-                            <h3 class="Card-title">Some Thing </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur </p>
-                            <a href="#" class="button">More Ditels</a>
-
-                        </div>
-                    </div>
-                    <div class="card-proj">
-                        <div class="info">
-
-                            <h3 class="Card-title">Some Thing </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur </p>
-                            <a href="#" class="button">More Ditels</a>
-
-                        </div>
-                    </div>
-                    <div class="card-proj">
-                        <div class="info">
-
-                            <h3 class="Card-title">Some Thing </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur </p>
-                            <a href="#" class="button">More Ditels</a>
-
-                        </div>
-                    </div>
-                    <div class="card-proj">
-                        <div class="info">
-
-                            <h3 class="Card-title">Some Thing </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur </p>
-                            <a href="#" class="button">More Ditels</a>
-
-                        </div>
-                    </div>
-                    <div class="card-proj">
-                        <div class="info">
-
-                            <h3 class="Card-title">Some Thing </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur </p>
-                            <a href="#" class="button">More Ditels</a>
-
-                        </div>
-                    </div>
-                    <div class="card-proj">
-                        <div class="info">
-
-                            <h3 class="Card-title">Some Thing </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur </p>
-                            <a href="#" class="button">More Ditels</a>
-
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="proj-contaner-degital-art" id="degital-art" data-viseple-degitalart="false">
+                    <h3>Degital art</h3>
+                    <div class="card-conterner">
+                        <div class="card-proj">
+                            <div class="info">
 
-            </div>
+                                <h3 class="Card-title">Some Thing </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur </p>
+                                <a href="#" class="button">More Ditels</a>
+
+                            </div>
+                        </div>
+                        <div class="card-proj">
+                            <div class="info">
+
+                                <h3 class="Card-title">Some Thing </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur </p>
+                                <a href="#" class="button">More Ditels</a>
+
+                            </div>
+                        </div>
+                        <div class="card-proj">
+                            <div class="info">
+
+                                <h3 class="Card-title">Some Thing </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur </p>
+                                <a href="#" class="button">More Ditels</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="proj-contaner-motion-graphics" id="motion-graphics" data-viseple-motiongraphics="false">
+                    <h3>Motion graphics</h3>
+                    <div class="card-conterner">
+                        <div class="card-proj">
+                            <div class="info">
+
+                                <h3 class="Card-title">Some Thing </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur </p>
+                                <a href="#" class="button">More Ditels</a>
+
+                            </div>
+                        </div>
+                        <div class="card-proj">
+                            <div class="info">
+
+                                <h3 class="Card-title">Some Thing </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur </p>
+                                <a href="#" class="button">More Ditels</a>
+
+                            </div>
+                        </div>
+                        <div class="card-proj">
+                            <div class="info">
+
+                                <h3 class="Card-title">Some Thing </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur </p>
+                                <a href="#" class="button">More Ditels</a>
+
+                            </div>
+                        </div>
+                        <div class="card-proj">
+                            <div class="info">
+
+                                <h3 class="Card-title">Some Thing </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur </p>
+                                <a href="#" class="button">More Ditels</a>
+
+                            </div>
+                        </div>
+                        <div class="card-proj">
+                            <div class="info">
+
+                                <h3 class="Card-title">Some Thing </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur </p>
+                                <a href="#" class="button">More Ditels</a>
+
+                            </div>
+                        </div>
+                        <div class="card-proj">
+                            <div class="info">
+
+                                <h3 class="Card-title">Some Thing </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur </p>
+                                <a href="#" class="button">More Ditels</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
         </section>
     </section>
     <script src="fun.js"></script>
