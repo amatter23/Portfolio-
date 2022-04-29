@@ -1,6 +1,5 @@
 // function([string1, string2],target id,[color1,color2])    
 consoleText(['Hello World.', 'Matter.', 'enjoy.'], 'text', ['white', '#33da89bd', '#889498']);
-
 function consoleText(words, id, colors) {
     if (colors === undefined) colors = ['#fff'];
     var visible = true;
@@ -48,4 +47,43 @@ function consoleText(words, id, colors) {
             visible = true;
         }
     }, 400)
+}
+
+
+
+
+const buttoncatj = [document.getElementById("Poster-button"), document.querySelector("#Degital-Art-button"), document.querySelector("#Motion-Graphics-button")];
+const projectcontaner = [document.querySelector('#posters'), document.querySelector('#degital-art'), document.querySelector('#motion-graphics')];
+const atrp = ["data-viseple-poster", "data-viseple-degitalart", "data-viseple-motiongraphics"]
+function seclectcontenerproj(clicked_id) {
+    const vispel = clicked_id;
+    for (let step = 0; step < 3; step++) {
+        for (let step1 = 0; step1 < 3; step1++) {
+            projectcontaner[step1].setAttribute(atrp[step1], false);
+        }
+        if (vispel == buttoncatj[step].id) {
+            projectcontaner[step].setAttribute(atrp[step], true);
+            { break; }
+        }
+
+    }
+}
+
+
+window.addEventListener('scroll', vissr)
+function vissr() {
+    var visss = document.querySelectorAll('.viss');
+    for (var i = 0; i < visss.length; i++) {
+        var windowheight = window.innerHeight
+        var visstop = visss[i].getBoundingClientRect().top
+        console.log(visstop)
+        var visspoint = 150;
+
+        if (visstop < windowheight - visspoint) {
+            visss[i].classList.add('active')
+        }
+        else {
+            visss[i].classList.remove('active')
+        }
+    }
 }
