@@ -76,7 +76,6 @@ function vissr() {
     for (var i = 0; i < visss.length; i++) {
         var windowheight = window.innerHeight
         var visstop = visss[i].getBoundingClientRect().top
-        console.log(visstop)
         var visspoint = 150;
 
         if (visstop < windowheight - visspoint) {
@@ -87,3 +86,29 @@ function vissr() {
         }
     }
 }
+window.addEventListener('scroll', point)
+function point() {
+    var visss = document.querySelectorAll('.dots');
+    var need = document.querySelectorAll('.dote')
+    console.log(need.length)
+    for (var i = 0; i < visss.length; i++) {
+        var windowheight = window.innerHeight
+        var visstop = visss[i].getBoundingClientRect().offsetTop
+        var visspoint = 0;
+        if (visstop < windowheight) {
+            need[i].classList.add('cool')
+            var set = visstop;
+        }
+        // else if (visstop > ) {
+        //     need[i].classList.remove("cool")
+
+        // for (var i = 0; i < visss.length; i++) {
+        //     if (need[i].classList.contains("cool")) {
+        //         for (i; i < 0; i--) {
+        //             need[i].classList.remove("cool")
+        //         }
+        //     }
+        // }
+    }
+}
+
