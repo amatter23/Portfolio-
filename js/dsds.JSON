@@ -1,0 +1,28 @@
+{
+  "projects": [
+  {
+  "name":"Personal portfolio",
+  "description":"website as a cv show the projects and skills",
+  "used_language":["HTML","CSS","JS"],
+  "img":"https://usaupload.com/cache/plugins/filepreviewer/609541/898f2b153fe6170d79ecab2faaa9bd18892a9af53fb8701c48383b7ef40b52e5/1100x800_cropped.jpg",
+  "link":"amatter23.github.io/Matter-website./",
+  "github_link":"https://github.com/amatter23/Matter-website."
+  },
+  {
+  "name":"Windows-XP",
+  "description":"This site is a portfolio in the form of windows XP",
+  "used_language":["HTML","CSS","JS"],
+  "img":"https://usaupload.com/cache/plugins/filepreviewer/609542/9594b083f354e0848276a244a7e3e51a1b56b8113086bc98b2f4c2fc444b8244/1100x800_cropped.jpg",
+  "link":"https://amatter23.github.io/Windows-XP/",
+   "github_link":"https://github.com/amatter23/Windows-XP"
+  },
+  {
+  "name":"Survival website",
+  "description":"freelance work in upwork client want to convert an xd design to website used html and css in project",
+  "used_language":["HTML","CSS"],
+  "img":"https://usaupload.com/cache/plugins/filepreviewer/609549/bc42d6bf915c9feb05d5608f5fe7a39a988a1bf00c40b00877bc4f10feb60d7f/1100x800_cropped.jpg",
+  "link":"https://amatter23.github.io/Survival-website/",
+  "github_link":"https://github.com/amatter23/Survival-website"
+  }
+  ]
+}
