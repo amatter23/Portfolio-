@@ -1,4 +1,4 @@
-#Portfolio 🌟
+# Portfolio 🌟
 
 Welcome to my portfolio website, a dedicated space where I showcase my projects, skills, and professional journey. It offers an interactive platform for potential employers or collaborators to get an insight into my work and expertise.
 
